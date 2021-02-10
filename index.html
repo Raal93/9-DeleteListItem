@@ -40,13 +40,13 @@
 			}
 
 			// *
-			showNamesList = () => (
-				this.state.names.map(name => (
+				showNamesList = () => (
+				this.state.names.map((name, index) => (
 					<Person
 						name={name}
 						handleClick={this.handleClick}
-						id={this.state.names.indexOf(name)}
-						key={this.state.names.indexOf(name)}
+						id={index}
+						key={index}
 					/>
 				))
 			)
